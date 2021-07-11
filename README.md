@@ -6,7 +6,7 @@ Bu repo [Kodluyoruz](Kodluyoruz.org) SQL eğitimi için hazırlamış olduğum r
 ## ÖDEV 1
 
 ### SORU 1
-Dilm tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
+Film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 
 ### CEVAP 1
 ```
@@ -14,7 +14,7 @@ SELECT title, description FROM film;
 ```
 
 ### SORU 2
-film tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük VE 75 ten küçük olma koşullarıyla sıralayınız.
+Film tablosunda bulunan tüm sütunlardaki verileri film uzunluğu (length) 60 dan büyük VE 75 ten küçük olma koşullarıyla sıralayınız.
 
 ### CEVAP 2
 ```
