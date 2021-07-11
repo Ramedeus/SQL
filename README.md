@@ -8,7 +8,7 @@ Dvdrental Database linki:
 https://www.postgresqltutorial.com/postgresql-sample-database/
 ```
 
-## ÖDEV 1 :red_circle:
+## ÖDEV 1 :open_book:	
 
 ### SORU 1 :question:
 Film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
@@ -54,7 +54,7 @@ SELECT * FROM film
 WHERE length < 50 AND NOT rental_rate = 2.99 OR NOT rental_rate = 4.99;
 ```
 
-## ÖDEV 2 :red_circle:
+## ÖDEV 2 :open_book:	
 
 ### SORU 1 :question:
 Film tablosunda bulunan tüm sütunlardaki verileri replacement cost değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla
