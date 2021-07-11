@@ -14,7 +14,7 @@ https://www.postgresqltutorial.com/postgresql-sample-database/
 Film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 
 ### CEVAP 1
-```html
+```json
 SELECT title, description FROM film;
 ```
 
