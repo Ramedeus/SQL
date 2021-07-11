@@ -8,13 +8,13 @@ Dvdrental Database linki:
 https://www.postgresqltutorial.com/postgresql-sample-database/
 ```
 
-## ÖDEV 1
+## ÖDEV 1 :red_circle:
 
 ### SORU 1
 Film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 
 ### CEVAP 1
-```json
+```
 SELECT title, description FROM film;
 ```
 
