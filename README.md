@@ -84,10 +84,48 @@ SELECT * FROM film
 WHERE rental_rate IN (0.99, 2.99, 4.99) AND replacement_cost IN (12.99, 15.99, 28.99);
 ```
 
-## Contributing
+## ÖDEV 3 :open_book:	
+
+### SORU 1 :question:
+Country tablosunda bulunan country sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
+
+### CEVAP 1 :green_square:
+```
+SELECT country  FROM country 
+WHERE country LIKE 'A%a';
+```
+
+### SORU 2 :question:
+Country tablosunda bulunan country sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
+
+### CEVAP 2 :green_square:
+```
+SELECT country  FROM country 
+WHERE country LIKE '_____%n';
+```
+
+### SORU 3 :question:
+Film tablosunda bulunan title sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin 'T' karakteri içeren film isimlerini sıralayınız.
+
+### CEVAP 3 :green_square:
+```
+SELECT title  FROM film  
+WHERE title ILIKE '%t%t%t%t%';
+```
+
+### SORU 4 :question:
+Film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve rental_rate 2.99 olan verileri sıralayınız.
+
+### CEVAP 4 :green_square:
+```
+SELECT *  FROM film  
+WHERE title LIKE 'C%' AND length > 90 AND rental_rate IN (2.99);
+```
+
+## Contributing :hammer_and_wrench:	
 Hatalar, öneriler ve değişiklikler için lütfen bir konu açınız.
 
-## License
+## License :notebook_with_decorative_cover:
 
 [MIT](https://www.google.com/search?q=mit+license&oq=mit+license&aqs=chrome.0.0l4j0i22i30l6.2910j0j7&sourceid=chrome&ie=UTF-8)
 
