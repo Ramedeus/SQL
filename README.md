@@ -122,6 +122,51 @@ SELECT *  FROM film
 WHERE title LIKE 'C%' AND length > 90 AND rental_rate IN (2.99);
 ```
 
+## ÖDEV 4 :open_book:	
+
+### SORU 1 :question:
+Film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.
+
+### CEVAP 1 :green_square:
+```
+SELECT DISTINCT	replacement_cost FROM film;
+```
+
+### SORU 2 :question:
+Film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?
+
+### CEVAP 2 :green_square:
+```
+SELECT COUNT (DISTINCT	replacement_cost) FROM film;
+```
+
+### SORU 3 :question:
+Film tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
+
+### CEVAP 3 :green_square:
+```
+SELECT COUNT (*) FROM film
+WHERE title LIKE 'T%' AND rating = 'G';
+```
+
+### SORU 4 :question:
+Country tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
+
+### CEVAP 4 :green_square:
+```
+SELECT COUNT(*) FROM country
+WHERE country LIKE '_____';
+```
+
+### SORU 5 :question:
+City tablosundaki şehir isimlerinin kaçtanesi 'R' veya r karakteri ile biter?
+
+### CEVAP 5 :green_square:
+```
+SELECT COUNT(*) FROM city
+WHERE city ILIKE '%r';
+```
+
 ## Contributing :hammer_and_wrench:	
 Hatalar, öneriler ve değişiklikler için lütfen bir konu açınız.
 
