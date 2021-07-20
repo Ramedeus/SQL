@@ -7,11 +7,19 @@ Dvdrental Database linki:
 ```
 https://www.postgresqltutorial.com/postgresql-sample-database/
 ```
-[ÖDEV](#ödev-1)
+[ÖDEV 1](#ödev-1)
 
+[ÖDEV 2](#ödev-2)
 
+[ÖDEV 3](#ödev-3)
 
-## :open_book: ÖDEV 	
+[ÖDEV 4](#ödev-4)
+
+[ÖDEV 5](#ödev-5)
+
+[ÖDEV 6](#ödev-6)
+
+## :open_book: ÖDEV 1	
 
 ### SORU 1 :question:
 Film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
