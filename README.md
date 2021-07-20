@@ -7,17 +7,17 @@ Dvdrental Database linki:
 ```
 https://www.postgresqltutorial.com/postgresql-sample-database/
 ```
-[ÖDEV 1](#ödev-1)
 
-[ÖDEV 2](#ödev-2)
+| ÖDEVLER      |
+| ----------- |
+| [ÖDEV 1](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-1) |
+| [ÖDEV 2](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-2) |
+| [ÖDEV 3](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-3) |
+| [ÖDEV 4](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-4) |
+| [ÖDEV 5](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-5) |
+| [ÖDEV 6](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-6) |
 
-[ÖDEV 3](#ödev-3)
-
-[ÖDEV 4](#ödev-4)
-
-[ÖDEV 5](#ödev-5)
-
-[ÖDEV 6](#ödev-6)
+---
 
 ## :open_book: ÖDEV 1	
 
@@ -65,6 +65,8 @@ SELECT * FROM film
 WHERE length < 50 AND NOT rental_rate = 2.99 OR NOT rental_rate = 4.99;
 ```
 
+---
+
 ## :open_book: ÖDEV 2 
 
 ### SORU 1 :question:
@@ -94,6 +96,8 @@ Film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99, 2.99, 4.99
 SELECT * FROM film
 WHERE rental_rate IN (0.99, 2.99, 4.99) AND replacement_cost IN (12.99, 15.99, 28.99);
 ```
+
+---
 
 ## :open_book: ÖDEV 3 	
 
@@ -132,6 +136,8 @@ Film tablosunda bulunan tüm sütunlardaki verilerden title 'C' karakteri ile ba
 SELECT *  FROM film  
 WHERE title LIKE 'C%' AND length > 90 AND rental_rate IN (2.99);
 ```
+
+---
 
 ## :open_book: ÖDEV 4 	
 
@@ -178,6 +184,8 @@ SELECT COUNT(*) FROM city
 WHERE city ILIKE '%r';
 ```
 
+---
+
 ## :open_book: ÖDEV 5 
 
 ### SORU 1 :question:
@@ -213,6 +221,8 @@ WHERE store_id = 1
 ORDER BY last_name DESC
 LIMIT 4;
 ```
+
+---
 
 ## :open_book: ÖDEV 6 	
 
@@ -254,6 +264,8 @@ SELECT DISTINCT(replacement_cost) FROM film
 WHERE length > 150
 ORDER BY replacement_cost ASC;
 ```
+
+---
 
 ## Contributing :hammer_and_wrench:	
 Hatalar, öneriler ve değişiklikler için lütfen bir konu açınız.
