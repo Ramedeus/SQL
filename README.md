@@ -12,19 +12,18 @@ Database Üretmek için link:
 https://www.mockaroo.com/
 ```
 
-| ÖDEVLER | 
-| ----------- | 
+
 | [ÖDEV 1](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-1) |
-| [ÖDEV 2](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-2) |
-| [ÖDEV 3](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-3) |
-| [ÖDEV 4](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-4) |
-| [ÖDEV 5](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-5) |
-| [ÖDEV 6](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-6) |
-| [ÖDEV 7](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-7) |
-| [ÖDEV 8](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-8) |
-| [ÖDEV 9](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-9) |
-| [ÖDEV 10](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-10) |
-| [ÖDEV 11](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-11) |
+ [ÖDEV 2](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-2) |
+ [ÖDEV 3](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-3) |
+ [ÖDEV 4](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-4) |
+ [ÖDEV 5](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-5) |
+ [ÖDEV 6](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-6) |
+ [ÖDEV 7](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-7) |
+ [ÖDEV 8](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-8) |
+ [ÖDEV 9](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-9) |
+ [ÖDEV 10](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-10) |
+ [ÖDEV 11](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-11) |
 
 ---
 
