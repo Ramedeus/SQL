@@ -24,6 +24,7 @@ https://www.mockaroo.com/
 | [ÖDEV 8](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-8) |
 | [ÖDEV 9](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-9) |
 | [ÖDEV 10](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-10) |
+| [ÖDEV 11](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-11) |
 
 ---
 
@@ -711,6 +712,89 @@ FULL JOIN sorgusunu yazınız.
 ```java
 SELECT rental_id, first_name, last_name FROM customer 
 FULL JOIN rental ON rental.customer_id = customer.customer_id;
+```
+</details>
+	
+## :open_book: ÖDEV 11 	
+
+### SORU 1 :question:
+Actor ve customer tablolarında bulunan first_name sütunları için tüm verileri sıralayalım.
+
+### :green_square: CEVAP 1
+  
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+(SELECT first_name FROM actor)
+UNION 
+(SELECT first_name FROM customer)
+ORDER BY first_name;
+```
+</details> 
+  
+### SORU 2 :question:
+Actor ve customer tablolarında bulunan first_name sütunları için kesişen verileri sıralayalım.
+
+### :green_square: CEVAP 2 
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+(SELECT first_name FROM actor)
+INTERSECT
+(SELECT first_name FROM customer)
+ORDER BY first_name;
+```
+</details>   
+
+### SORU 3 :question:
+Actor ve customer tablolarında bulunan first_name sütunları için ilk tabloda bulunan ancak ikinci tabloda bulunmayan verileri sıralayalım.
+
+### :green_square: CEVAP 3
+  
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+(SELECT first_name FROM actor)
+EXCEPT
+(SELECT first_name FROM customer)
+ORDER BY first_name;
+```
+</details>
+
+### SORU 4 :question:
+İlk 3 sorguyu tekrar eden veriler için de yapalım.
+
+### :green_square: CEVAP 4
+  
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+--4.1 CEVAP
+	
+(SELECT first_name FROM actor)
+UNION ALL
+(SELECT first_name FROM customer)
+ORDER BY first_name;
+
+--4.2 CEVAP
+	
+(SELECT first_name FROM actor)
+INTERSECT ALL 
+--INTERSECT ve INTERSECT ALL kullanımı arasında herhangi bir fark yok. Sunçlar aynı dönüyor. Hocamızında göstermek istedği bu.
+(SELECT first_name FROM customer)
+ORDER BY first_name;
+
+--4.3 CEVAP
+	
+(SELECT first_name FROM actor)
+EXCEPT ALL
+(SELECT first_name FROM customer)
+ORDER BY first_name;
 ```
 </details>	
 ---
