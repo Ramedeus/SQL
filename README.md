@@ -24,6 +24,7 @@ https://www.mockaroo.com/
  [ÖDEV 9](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-9) |
  [ÖDEV 10](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-10) |
  [ÖDEV 11](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-11) |
+ [ÖDEV 12](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-12) |
 
 ---
 
@@ -796,6 +797,75 @@ EXCEPT ALL
 ORDER BY first_name;
 ```
 </details>	
+
+## :open_book: ÖDEV 12	
+
+### SORU 1 :question:
+Film tablosunda film uzunluğu length sütununda gösterilmektedir. Uzunluğu ortalama film uzunluğundan fazla kaç tane film vardır?
+
+### :green_square: CEVAP 1
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```javascript
+SELECT length FROM film
+WHERE length >
+(
+SELECT AVG(length) FROM film 
+);
+```
+</details>
+
+### SORU 2 :question:
+Film tablosunda en yüksek rental_rate değerine sahip kaç tane film vardır?
+
+### :green_square: CEVAP 2 
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+SELECT COUNT(rental_rate) FROM film
+WHERE rental_rate =
+(
+SELECT MAX(rental_rate) FROM film
+);
+```
+</details>
+
+### SORU 3 :question:
+Film tablosunda en düşük rental_rate ve en düşün replacement_cost değerlerine sahip filmleri sıralayınız.
+
+### :green_square: CEVAP 3 
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+SELECT title, rental_rate, (SELECT MIN(replacement_cost) FROM film) FROM film
+WHERE  rental_rate = ANY
+(
+SELECT MIN(rental_rate) FROM film
+);
+```
+</details>
+
+### SORU 4 :question:
+Payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
+
+### :green_square: CEVAP 4 
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+SELECT customer.customer_id, first_name, last_name, COUNT(*) AS number_of_purchases FROM customer
+LEFT JOIN payment ON customer.customer_id = payment.customer_id
+GROUP BY customer.customer_id, first_name, last_name
+ORDER BY number_of_purchases DESC;
+```
+</details>
 ---
 
 ## Contributing :hammer_and_wrench:	
