@@ -23,6 +23,7 @@ https://www.mockaroo.com/
 | [ÖDEV 7](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-7) |
 | [ÖDEV 8](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-8) |
 | [ÖDEV 9](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-9) |
+| [ÖDEV 10](https://github.com/Ramedeus/SQL/blob/main/README.md#open_book-%C3%B6dev-10) |
 
 ---
 
@@ -667,7 +668,51 @@ SELECT rental_id, first_name, last_name FROM customer
 INNER JOIN rental ON rental.customer_id = customer.customer_id;
 ```
 </details>
+
+## :open_book: ÖDEV 10 	
+
+### SORU 1 :question:
+City tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız.	
+
+### :green_square: CEVAP 1
   
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+SELECT city, country FROM city
+LEFT JOIN country ON city.city_id = country.country_id;
+```
+</details> 
+  
+### SORU 2 :question:
+Customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu yazınız.
+
+### :green_square: CEVAP 2 
+
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+SELECT payment_id, first_name, last_name FROM customer 
+RIGHT JOIN payment ON payment.customer_id = customer.customer_id;
+```
+</details>   
+
+### SORU 3 :question:
+Customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz
+FULL JOIN sorgusunu yazınız.
+	
+### :green_square: CEVAP 3
+  
+<details>
+<summary>Kodu görmek için tıklayınız.</summary>
+  
+```java
+SELECT rental_id, first_name, last_name FROM customer 
+FULL JOIN rental ON rental.customer_id = customer.customer_id;
+```
+</details>	
 ---
 
 ## Contributing :hammer_and_wrench:	
